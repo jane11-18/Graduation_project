@@ -4,7 +4,11 @@ import org.apache.http.HttpStatus;
 
 import java.util.HashMap;
 import java.util.Map;
+<<<<<<< HEAD
 
+=======
+//封装放回给前端的数据
+>>>>>>> b0d2916 (Initial commit)
 
 public class R extends HashMap<String, Object> {
 

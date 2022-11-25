@@ -3,10 +3,7 @@ package com.example.emos.api.common.util;
 import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
-<<<<<<< HEAD
-=======
 //封装分页数据
->>>>>>> b0d2916 (Initial commit)
 
 @Data
 public class PageUtils implements Serializable {

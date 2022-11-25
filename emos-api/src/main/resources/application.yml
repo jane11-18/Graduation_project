@@ -1,20 +1,14 @@
 server:
   jetty:
     threads:
-<<<<<<< HEAD
-=======
 #      最小线程4个，最大8个，，少量线程处理大量并发请求
->>>>>>> b0d2916 (Initial commit)
       acceptors: 4
       selectors: 8
   port: 8090
   servlet:
     context-path: /emos-api
     multipart:
-<<<<<<< HEAD
-=======
 #      最大请求体积10M，文件上传单个不能超过2M
->>>>>>> b0d2916 (Initial commit)
       max-request-size: 10MB
       max-file-size: 2MB
 
@@ -23,15 +17,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-<<<<<<< HEAD
-      url: jdbc:mysql://localhost:3306/emos?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
-      username: root
-      password: abc123456
-=======
       url: jdbc:mysql://localhost:3306/emos?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       username: root
       password: qinjia18
->>>>>>> b0d2916 (Initial commit)
       initial-size: 2
       max-active: 4
       min-idle: 4
@@ -43,11 +31,7 @@ spring:
     database: 0
     host: localhost
     port: 6379
-<<<<<<< HEAD
-    password: abc123456
-=======
     password: qinjia18
->>>>>>> b0d2916 (Initial commit)
     jedis:
       pool:
         max-active: 1000
@@ -60,13 +44,8 @@ spring:
       port: 27017
       database: emos
       authentication-database: admin
-<<<<<<< HEAD
-      username: admin
-      password: abc123456
-=======
       username: root
       password: root
->>>>>>> b0d2916 (Initial commit)
       
 sa-token:
   #token名称 (同时也是cookie名称)
@@ -107,20 +86,6 @@ springdoc:
     disable-swagger-default-url: on
 tencent:
   cloud:
-<<<<<<< HEAD
-    appId: 腾讯云APPID
-    secretId: 腾讯云SecretId
-    secretKey: 腾讯云SecretKey
-    region: 存储桶的区域
-    bucket: 存储桶的名字
-  trtc:
-    appId: 你自己TRTC的APPID
-    secretKey: 你自己TRTC的密钥
-    expire: 86400
-wx:
-  app-id: 你自己微信小程序APPID
-  app-secret: 你自己微信小程序密钥
-=======
     appId: 1310140897
     secretId: AKIDtc4HEuJRM5ZnmVyB9sLYWEgsmRoukKdf
     secretKey: mHWT9Y1rQijTw82g3A0bvxiIcfRwB8oD
@@ -133,4 +98,3 @@ wx:
 wx:
   app-id: wx5376b70b310c440f
   app-secret: 866c618eb62bfa76dee9b80f7bff346b
->>>>>>> b0d2916 (Initial commit)

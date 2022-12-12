@@ -62,4 +62,13 @@
         FROM tb_user
         WHERE status = 1
     </select>
+    <select id="login" parameterType="HashMap" resultType="Integer">
+        SELECT id
+        FROM tb_user
+        WHERE username = #{username}
+--             HEX(AES_DECRYPT(#{password},#{username}))  密码的加密方式
+        AND password = HEX(AES_DECRYPT(#{password},#{username}))
+--        LIMIT 1    查询到后立即停止，查询不到返回null
+        LIMIT 1;
+    </select>
 </mapper>

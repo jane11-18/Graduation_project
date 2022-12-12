@@ -98,3 +98,7 @@ tencent:
 wx:
   app-id: wx5376b70b310c440f
   app-secret: 866c618eb62bfa76dee9b80f7bff346b
+
+emos:
+  code:
+  tcode:

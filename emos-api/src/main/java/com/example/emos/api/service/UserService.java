@@ -13,6 +13,8 @@ public interface UserService {
 
     public Set<String> searchUserPermissions(int userId);
 
+    public Integer login(HashMap param);
+
     public HashMap searchUserSummary(int userId);
 
     public HashMap searchById(int userId);

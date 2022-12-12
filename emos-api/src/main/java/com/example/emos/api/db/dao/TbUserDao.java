@@ -1,6 +1,7 @@
 package com.example.emos.api.db.dao;
 
 import com.example.emos.api.db.pojo.TbUser;
+import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.ArrayList;
@@ -17,6 +18,8 @@ public interface TbUserDao {
     public Integer searchIdByOpenId(String openId);
 
     public HashMap searchUserSummary(int userId);
+
+    public Integer login(HashMap param);
 
     public HashMap searchUserInfo(int userId);
 

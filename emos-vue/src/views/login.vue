@@ -15,6 +15,7 @@
 								<h2>Emos在线办公平台</h2>
 								<span>( Ver 1.0 )</span>
 							</div>
+<!--                            什么时候显示哪种方式完全是由qrCodeVisible变量的值来决定的-->
 							<div v-if="!qrCodeVisible">
 								<div class="row">
 									<el-input
@@ -55,6 +56,7 @@
 
 <script>
 import 'element-plus/lib/theme-chalk/display.css';
+import { isUsername, isPassword } from '../utils/validate.js';
 import router from '../router/index.js';
 export default {
 	data: function() {

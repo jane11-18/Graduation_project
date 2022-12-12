@@ -89,6 +89,13 @@ public class UserServiceImpl implements UserService {
         return permissions;
     }
 
+//    登录
+    @Override
+    public Integer login(HashMap param) {
+        Integer userid = userDao.login(param);
+        return userid;
+    }
+
     @Override
     public HashMap searchById(int userId) {
         HashMap map = userDao.searchById(userId);
